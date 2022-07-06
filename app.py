@@ -65,7 +65,7 @@ if uploaded_file is not None:
     )
 
 # 03. setting the HFP setting with slider
-filter_freq = st.sidebar.slider('Please select the HPF range (from 0 to 100 %) ', min_value=0, max_value=100, step=1)
+filter_freq = st.sidebar.slider('Please select the HPF range (from 0 to 100 %) ', min_value=0, max_value=100, step=1, value= 10)
 
 # 04. Button to accomplish the FFT and iFFT
 if st.sidebar.button('2. Run the Image FFT and iFFT'):
